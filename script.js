@@ -72,6 +72,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
         observer.observe(card);
     });
+
+    // Hero Search Bar Interaction
+    const searchInput = document.querySelector('.search-input');
+    if (searchInput) {
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const query = searchInput.value.toLowerCase().trim();
+                
+                // Simple keyword matching for navigation
+                if (query.includes('beautrip') || query.includes('뷰트립')) {
+                    document.getElementById('beautrip').scrollIntoView({ behavior: 'smooth' });
+                } else if (query.includes('beme') || query.includes('비미')) {
+                    document.getElementById('beme').scrollIntoView({ behavior: 'smooth' });
+                } else if (query.includes('innerkurly') || query.includes('이너컬리')) {
+                    document.getElementById('innerkurly').scrollIntoView({ behavior: 'smooth' });
+                } else if (query.includes('about') || query.includes('자기소개')) {
+                    document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    // Visual feedback for no results
+                    searchInput.style.borderColor = 'var(--accent-pink)';
+                    setTimeout(() => {
+                        searchInput.style.borderColor = 'var(--border-light)';
+                    }, 1000);
+                }
+            }
+        });
+    }
 });
 
 /**

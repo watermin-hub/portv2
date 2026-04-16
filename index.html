@@ -12,41 +12,84 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">Im Sumin</div>
-            <div class="header-actions">
-                <button class="icon-btn" aria-label="Copy Link"><i class="fa-solid fa-link"></i></button>
-            </div>
-        </div>
+    <!-- Minimal Header (1.png style) -->
+    <header class="header-minimal">
+        <div class="logo-text">Portfolio</div>
+        <div class="year-text">2026</div>
     </header>
 
     <main>
         
-        <!-- 1. Intro / Hero Section (Slide 2) -->
+        <!-- 1. Intro / Hero Section (Slide 2 -> New 1.png style) -->
         <section class="hero-section">
-            <h1 class="main-copy">
-                <span class="weight-medium">데이터</span>에 <span class="weight-medium">감각</span>을 더해 <span class="weight-medium">전략</span>을 만드는<br>
-                <span class="highlight-text">마케터 임수민</span>입니다.
-            </h1>
-            <div class="sub-copy">
-                <p>감각은 고객이 왜 움직이는지 가설을 세우고,<br>
-                데이터는 그 가설이 실제 행동으로 이어졌는지 확인합니다.</p>
-                
-                <p>프로젝트를 통해 광고 A/B 테스트, GA4·Hotjar 트래킹, 프로토타입 실험 등으로<br>
-                사람의 흐름을 숫자로 남기고, 그 근거로 콘텐츠와 경험을 개선한 경험이 있습니다.</p>
-                
-                <p><strong>BeauTrip 프로젝트</strong>에서는 외국인의 한국 시술 탐색 경험을 재설계하고 행동 지표 변화를 검증했습니다.<br>
-                캠페인 이후 <strong>체류시간 76% ↑ / 탐색 관련 체류 202% ↑ / 후기 접근 491% ↑</strong> 로<br>
-                전환 이전 행동이 유의미하게 증가했습니다.</p>
-            </div>
-            <div class="portfolio-year">
-                <h3>Portfolio<br><span class="year-light">2025</span></h3>
-            </div>
             
-            <!-- Scroll Down CTA -->
-            <a href="#about-me" class="scroll-down-cta">
+            <!-- Search Bar UI -->
+            <div class="search-container">
+                <div class="search-bar-wrapper">
+                    <input type="text" class="search-input" placeholder="Performance Marketer">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+
+            <!-- Hero Title -->
+            <div class="hero-title-group">
+                <h1 class="hero-name">Im Sumin</h1>
+                <p class="hero-main-copy">
+                    데이터로 가설을 검증하고 실행하는<br>
+                    마케터 임수민입니다.
+                </p>
+            </div>
+
+            <!-- Capability Grid (Arch Cards) -->
+            <div class="capability-grid">
+                <!-- Cap 1 -->
+                <div class="cap-card">
+                    <div class="cap-arch">
+                        <div class="cap-content">
+                            <span class="cap-label">Capability 1</span>
+                            <h3 class="cap-title">퍼널 설계 전략</h3>
+                            <p class="cap-desc">
+                                TOF부터 BOF까지<br>
+                                <strong>전환을 이끄는 고객 여정</strong>을 설계하며<br>
+                                각 단계에 맞는 액션을 고민합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cap 2 -->
+                <div class="cap-card">
+                    <div class="cap-arch">
+                        <div class="cap-content">
+                            <span class="cap-label">Capability 2</span>
+                            <h3 class="cap-title">데이터 기반 의사 결정</h3>
+                            <p class="cap-desc">
+                                성과를 만드는 <strong>분석 중심적 사고</strong>로<br>
+                                수치를 통해 문제를 진단하고<br>
+                                방향을 설정합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cap 3 -->
+                <div class="cap-card">
+                    <div class="cap-arch">
+                        <div class="cap-content">
+                            <span class="cap-label">Capability 3</span>
+                            <h3 class="cap-title">기술적 이해 바탕 협업</h3>
+                            <p class="cap-desc">
+                                개발·기획 간의 <strong>흐름과 맥락을 이해</strong>하고,<br>
+                                원활한 커뮤니케이션으로<br>
+                                실행을 조율합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down CTA (Kept for navigation) -->
+            <a href="#about-me" class="scroll-down-cta" style="margin-top: 60px;">
                 <i class="fas fa-chevron-down cta-icon"></i>
             </a>
         </section>
