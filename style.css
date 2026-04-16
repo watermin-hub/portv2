@@ -72,15 +72,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 120px 20px 60px;
+    padding: 80px 20px 40px; /* Reduced paddings */
     text-align: center;
 }
 
 /* Search Bar UI */
 .search-container {
-    margin-bottom: 60px; /* Space between search bar and title */
+    margin-bottom: 30px; /* Reduced from 60px */
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .search-bar-wrapper {
@@ -118,15 +118,30 @@ main {
 
 /* Hero Title */
 .hero-title-group {
-    margin-bottom: 100px; /* Major space before capabilities */
+    margin-bottom: 40px; /* Reduced from 100px */
 }
 
 .hero-name {
     font-size: 3.5rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -1px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: var(--primary-black);
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+/* 1.png의 이름 뒤 푸른색 바 효과 */
+.hero-name::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: #E6F0F8; /* 은은한 푸른색 */
+    z-index: -1;
 }
 
 .hero-main-copy {
@@ -135,6 +150,7 @@ main {
     line-height: 1.4;
     color: var(--text-main);
     word-break: keep-all;
+    margin-top: 10px;
 }
 
 /* Capability Grid (Arch Cards) */
@@ -143,8 +159,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     width: 100%;
-    max-width: 1100px;
-    margin-top: 20px;
+    max-width: 1200px; /* 카드를 더 넓게 하여 정원 비율에서도 텍스트 공간 확보 */
+    margin-top: 40px;
 }
 
 .cap-card {
@@ -156,11 +172,11 @@ main {
 
 .cap-arch {
     width: 100%;
-    padding-top: 100%; /* Circle shape / will be archified via CSS */
+    padding-top: 50%; /* 1:1 정원 비율 엄격 적용 */
     position: relative;
-    border: 1px solid #C4D3DF;
+    border: 1px solid #D9E2E9;
     border-bottom: none;
-    border-radius: 500px 500px 0 0;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,21 +185,29 @@ main {
 
 .cap-content {
     position: absolute;
-    bottom: 0;
+    bottom: -30px; /* 원 하단으로 텍스트를 과감하게 내려서 상단 여유 공간 확보 */
     left: 0;
     width: 100%;
-    padding: 0 20px 30px;
+    padding: 0 10px;
 }
 
 .cap-label {
+    position: absolute;
+    top: -10px; /* 아치 선의 가장 높은 지점에 정확히 맞춤 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff; /* 선을 자연스럽게 끊기 위한 배경 */
+    padding: 0 12px; /* 디자인 원본과 유사하게 좌우 여백 확보 */
     font-size: 0.85rem;
-    color: #888;
-    margin-bottom: 15px;
+    color: #9BA9B6; /* 원본의 은은한 회차색 톤 적용 */
+    font-weight: 400;
     display: block;
+    white-space: nowrap;
+    z-index: 2; /* 선보다 위로 올라오도록 설정 */
 }
 
 .cap-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* 원본 느낌의 크기 */
     font-weight: 700;
     margin-bottom: 15px;
     color: #222;
@@ -192,7 +216,7 @@ main {
 .cap-desc {
     font-size: 0.85rem;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.7;
     word-break: keep-all;
 }
 
