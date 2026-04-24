@@ -116,88 +116,101 @@
             </a>
         </section>
 
-        <!-- 3. Profile & Skills (Moved Up) -->
-        <section id="about-me" class="profile-section section-container">
-            <div class="toc-header">
-                <h2 class="toc-title">About me</h2>
-                <div class="toc-divider"></div>
-            </div>
-            
-            <div class="profile-grid-new">
-                <!-- Left: Image & Name -->
-                <div class="profile-left-new">
-                    <div class="profile-img-container-new">
-                        <img src="assets/prof.png" alt="Im Sumin" class="profile-img-new" onerror="this.src='https://via.placeholder.com/250'">
+        <!-- 3. About Me Section (Page 1 & 2) -->
+        <section id="about-me" class="about-section section-container">
+            <!-- About Page 1: Intro -->
+            <div class="about-page about-intro">
+                <div class="about-header-minimal">
+                    <h2 class="about-title">About me</h2>
+                </div>
+                
+                <div class="about-content-grid">
+                    <!-- Left: Profile Image & Name/Contact -->
+                    <div class="about-left-col">
+                        <div class="profile-premium-card">
+                            <div class="profile-img-wrapper-premium">
+                                <img src="assets/prof.png" alt="Im Sumin" class="profile-img-premium" onerror="this.src='https://via.placeholder.com/250x300'">
+                            </div>
+                            <div class="profile-info-premium">
+                                <div class="profile-name-korean">임수민</div>
+                                <div class="profile-meta-premium">
+                                    <p>1997.03.21.</p>
+                                    <p>010.7311.5045</p>
+                                    <p>imimsoomin@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="profile-text-wrapper">
-                        <h2 class="profile-name">임수민</h2>
-                        <div class="contact-info-new">
-                            <p>010.7311.5045</p>
-                            <p>imimsoomin@gmail.com</p>
+                    
+                    <!-- Right: Intro Copy -->
+                    <div class="about-right-col">
+                        <div class="intro-text-premium">
+                            <h3 class="intro-headline">
+                                사용자 행동을 기준으로 가설을 세우고,<br>
+                                GA4·Hotjar 트래킹과 광고 A/B 테스트로 실제 반응을 검증합니다.
+                            </h3>
+                            <div class="intro-paragraph-group">
+                                <p>프로토타입을 실험 환경으로 만들어 <strong>유입 이후의 행동 흐름을 측정</strong>하고, 그 결과를 리포팅해 <strong>다음 액션의 근거</strong>로 삼았습니다.</p>
+                                <p>BeauTrip 프로젝트에서는 외국인의 한국 시술 탐색 여정을 재설계하고, <strong>전환 이전 행동지표 변화를 확인</strong>했습니다.</p>
+                                <p class="last-para"><strong>캠페인 이후 사용자 체류 시간은 76% 증가</strong>했고, 탐색 관련 클릭 지표는 202% 증가하며 정보 탐색 행동이 유의미하게 확대되었습니다.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Right: Certifications & Skills -->
-                <div class="profile-right-new">
-                    <div class="cert-container-new">
-                        <h3>자격사항</h3>
-                        <ul class="cert-list-new">
-                            <li>SQL 개발자(SQLD)</li>
-                            <li>전산세무2급 (국가공인)</li>
-                            <li>데이터 분석 준전문가(ADsP)</li>
-                            <li>TAT 2급</li>
-                            <li>ERP 인사정보관리사 2급</li>
-                            <li>전산회계1급 (국가공인)</li>
-                            <li>ERP 회계정보관리사 2급</li>
-                            <li>전산회계운용사 3급</li>
-                            <li>컴퓨터활용능력 2급</li>
-                        </ul>
+            </div>
+
+            <!-- About Page 2: Details (Experience, Certificate, Skills) -->
+            <div class="about-page about-details">
+                <div class="about-header-minimal">
+                    <h2 class="about-title">About me</h2>
+                </div>
+
+                <div class="details-layout-premium">
+                    <div class="details-main-stack">
+                        <!-- Experience -->
+                        <div class="details-section-item experience-section">
+                            <h3 class="details-section-title">Experience</h3>
+                            <div class="experience-entry">
+                                <span class="exp-period">2025.07. ~ 2026.02.</span>
+                                <p class="exp-title">[KDT] 데이터분석 기술을 활용한 디지털콘텐츠 & 마케팅 기획 과정</p>
+                            </div>
+                        </div>
+
+                        <!-- Certificate -->
+                        <div class="details-section-item certificate-section">
+                            <h3 class="details-section-title">Certificate</h3>
+                            <div class="cert-columns-premium">
+                                <ul class="cert-column">
+                                    <li>검색광고마케터 1급 (취득 예정)</li>
+                                    <li>SQL개발자(SQLD)</li>
+                                    <li>컴퓨터활용능력 2급</li>
+                                    <li>ERP 인사정보관리사 2급</li>
+                                    <li>ERP 회계정보관리사 2급</li>
+                                </ul>
+                                <ul class="cert-column">
+                                    <li>GAC(Google Analytics Certification)</li>
+                                    <li>데이터분석준전문가(ADsP)</li>
+                                    <li>TAT 2급</li>
+                                    <li>전산세무 2급</li>
+                                    <li>전산회계 1급</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="skills-container-new">
-                        <h3>Skills</h3>
-                        
-                        <div class="skill-category">
-                            <span class="category-label">Analytics · Experiment</span>
-                            <div class="skill-tags">
-                                <span class="skill-tag">GA4/GTM</span>
-                                <span class="skill-tag">Hotjar</span>
-                                <span class="skill-tag">Clarity</span>
-                                <span class="skill-tag">Tableau</span>
-                                <span class="skill-tag">Looker Studio</span>
-                                <span class="skill-tag dimmed">Power BI</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <span class="category-label">Productivity · Ops</span>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Notion</span>
-                                <span class="skill-tag">Slack</span>
-                                <span class="skill-tag">Excel</span>
-                                <span class="skill-tag">Zapier</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <span class="category-label">Design · Content</span>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">Capcut</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <span class="category-label">Data · Dev</span>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Cursor</span>
-                                <span class="skill-tag">Supabase</span>
-                                <span class="skill-tag">Vercel</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">GitHub</span>
-                            </div>
+                    <!-- Skills (Right Side) -->
+                    <div class="details-side-stack skills-section">
+                        <h3 class="details-section-title">Skills</h3>
+                        <div class="skill-pills-premium">
+                            <span class="skill-pill">GA4/GTM</span>
+                            <span class="skill-pill">Hotjar</span>
+                            <span class="skill-pill">Tableau</span>
+                            <span class="skill-pill">Notion</span>
+                            <span class="skill-pill">Excel</span>
+                            <span class="skill-pill">Slack</span>
+                            <span class="skill-pill">MySQL</span>
+                            <span class="skill-pill">Figma</span>
+                            <span class="skill-pill">Capcut</span>
                         </div>
                     </div>
                 </div>
